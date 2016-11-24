@@ -17,38 +17,33 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+/*Typography styles*/
 h1, h2, h3 {
   font-family: 'Titillium Web', sans-serif;
 }
 
+/*Background Gradient*/
 .navbar, .home-callout {
   background: -webkit-linear-gradient(90deg, #01a99c 10%, #0698b1 90%); /* Chrome 10+, Saf5.1+ */ 
   background: -moz-linear-gradient(90deg, #01a99c 10%, #0698b1 90%); /* FF3.6+ */
   background: linear-gradient(90deg, #01a99c 10%, #0698b1 90%); /* W3C */
 }
 
+/*navbar styles*/
 .navbar {
   border: none;
 }
 
-.navbar-default .navbar-brand {
-  color: white;
-}
-
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: 0.75;
-}
-
+/*Homepage styles*/
 .home-callout {
   color: white;
   margin-top: -20px;
